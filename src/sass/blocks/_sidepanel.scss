@@ -1,0 +1,68 @@
+.sidepanel{
+    position: fixed;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100px;
+    top: 230px;
+    left: -50px;
+    padding-top: 30px;
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 340px;
+    z-index: 3;
+    &__link{
+        
+        
+        &:hover{
+            
+            svg path{
+                fill: red;
+                transition: 0.6s all;
+                
+            }
+        }
+    }
+    .facebook{
+        &:hover{
+            
+            svg path{
+                fill: #1A6ED8;
+                transition: 0.6s all;
+                
+            }
+        }
+    }
+    .github{
+        &:hover{
+            
+            svg path{
+                fill: #298545;
+                transition: 0.6s all;
+                
+            }
+        }
+    }
+    
+    
+    
+    &__divider{
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+    }
+    &__text{
+
+        height: 150px;
+        width: 25px;
+        span{
+            transform: rotate(-90deg) translate(-20%,-260%);
+            display: block;
+            width: 150px;
+        }
+
+    }
+
+}
